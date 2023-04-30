@@ -1,5 +1,5 @@
 <template>
   <div>
-    dfvfsg
+    ینمبتتلایخبلای
   </div>
 </template>
