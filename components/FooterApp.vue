@@ -4,7 +4,7 @@
 
 <!-- ///////////////////////////    TEMPLATE    /////////////////////////////////// -->
 <template>
-    <div>
+    <div class="text-white text-center">
         Footer
     </div>
 </template>

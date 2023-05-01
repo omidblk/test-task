@@ -27,7 +27,9 @@
             <p>وضعیت اشتراک : رایگان (فریمیوم)</p>
             <button class="ml-10 py-4 px-40 border-4 rounded-lg border-green-300 text-green-300">ارتقا اشتراک</button>
         </section>
-        <UniteApp/>
+        <UniteApp class="my-10"/>
+        <PractiseApp class="mt-14"/>
+        <PractiseApp class="mt-14"/>
     </main>
 </template>
 <!-- ///////////////////////////    STYLES    /////////////////////////////////// -->
