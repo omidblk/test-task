@@ -33,7 +33,7 @@
                     </NuxtLink>
                 </li>
                 <li class="mr-10 cursor-pointer">
-                    <NuxtLink to="" active-class="active">
+                    <NuxtLink to="/road-map" active-class="active">
                         <font-awesome-icon :icon="['fas', 'map-signs']" />
                         <span class="mr-8">مسیر یادگیری</span>
                     </NuxtLink>
