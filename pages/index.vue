@@ -1,5 +1,6 @@
 <script setup>
 
+
 </script>
 
 <!-- ///////////////////////////    TEMPLATE    /////////////////////////////////// -->
@@ -39,6 +40,6 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 115vh;
+    height: 830px;
 }
 </style>
