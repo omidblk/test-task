@@ -1,7 +1,10 @@
 <script setup>
+ import { useToast } from "vue-toastification";
 definePageMeta({
     layout:false
 })
+// Toast variables
+const toast = useToast()
 // Login variables
 let login = useState('login')
 const user = useState('user')
@@ -14,8 +17,9 @@ async function submit () {
             method: 'POST',
             body: formData
         })
+        console.log(data);
+        toast.success(data.message)
         login.value = true
-        console.log(login);
         navigateTo('/user')
         console.log(data);
     } catch (error) {

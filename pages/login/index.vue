@@ -1,7 +1,10 @@
 <script setup>
+ import { useToast } from "vue-toastification";
 definePageMeta({
     layout:false
 })
+// Toast variables
+const toast = useToast()
 // Login variables
 const mobile = useState('mobile', ()=> null)
 const formData = reactive({
@@ -14,6 +17,7 @@ async function submit () {
             body: formData
         })
         const user = useState('user',()=> data )
+        toast.success(data.data.message)
         navigateTo('login/verification')
     } catch (error) {
         console.log(error);
