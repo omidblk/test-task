@@ -8,8 +8,9 @@ const toast = useToast()
 // Login variables
 let login = useState('login')
 const user = useState('user')
+const code = ref(null)
 const formData = reactive({
-    code:null
+    code:code
 })
 async function submit () {
     try {
@@ -37,7 +38,7 @@ async function submit () {
             <img src="/logo1.png" alt="logo" class="h-20 w-1/2 mx-auto">
             <span class="text-3xl font-bold mt-4 mb-10">کد تایید را وارد کنید</span>
             <label for="name">کد تایید برای شماره  {{ user.data.mobile }}  ارسال شد</label>
-            <input type="text" name="name" v-model=" formData.code " class="mt-1 py-3 bg-slate-100 rounded-sm" placeholder="لطفا کد تایید را وارد کنید">
+            <input type="text" name="name" v-model=" code " class="mt-1 py-3 bg-slate-100 rounded-sm" placeholder="لطفا کد تایید را وارد کنید">
             <p class="cursor-pointer text-xs mt-4">ارسال مجدد کد</p>
             <button @click="submit()" class="text-white mt-8 py-2 mx-6 rounded-md">
                 تایید

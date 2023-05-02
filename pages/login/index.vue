@@ -39,7 +39,6 @@ async function submit () {
             <button @click="submit()" class="text-white mt-8 py-2 mx-6 rounded-md">
                 تایید
             </button>
-            {{ mobile }}
         </section>
     </div>
 </template>
