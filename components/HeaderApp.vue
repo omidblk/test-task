@@ -2,8 +2,10 @@
 const login = useState('login', () => false)
 function user() {
    if ( login.value ) {
+    console.log(login.value);
     navigateTo('/user')
    }else{
+    console.log(login.value);
     navigateTo('/login')
    }
 }
